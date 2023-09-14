@@ -27,7 +27,7 @@ return {
           "cpp",
           "cmake",
           "make",
-          "ocaml,
+          "ocaml",
           "clojure",
           "commonlisp",
           "dot",
