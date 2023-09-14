@@ -3,7 +3,7 @@ return {
    config = function()
     require("clangd_extensions").setup({
     inlay_hints = {
-        inline = vim.fn.has("nvim-0.10") == 1,
+        inline = false,
         -- Options other than `highlight' and `priority' only work
         -- if `inline' is disabled
         -- Only show inlay hints for the current line
