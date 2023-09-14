@@ -70,6 +70,13 @@ return {
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     end
 
+     -- configure clangd server
+     lspconfig.clangd.setup{
+       capabilities = capabilities,
+       on_attach = keybinds.on_attach,
+       filetypes = {"c", "cpp", "cc", "cxx"},
+    }
+
     -- configure html server
     lspconfig["html"].setup({
       capabilities = capabilities,
