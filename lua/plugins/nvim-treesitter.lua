@@ -39,7 +39,6 @@ return {
           "jsdoc",
           "typescript",
           "tsx",
-          "yaml",
           "html",
           "css",
           "prisma",

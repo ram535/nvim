@@ -1,5 +1,7 @@
 vim.g.mapleader = " "
 
+vim.opt.clipboard = "unnamedplus"
+
 vim.opt.autochdir = true
 
 -- tabs & indentation
