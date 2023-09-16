@@ -19,12 +19,12 @@ return {
         -- enable autotagging (w/ nvim-ts-autotag plugin)
         autotag = { enable = true },
         -- ensure these language parsers are installed
-        ensure_installed = {
-          "json",
+        -- ensure_installed = {
+          -- "json",
           -- "dart",
-          "c",
-          "cpp",
-          "cmake",
+          -- "c",
+          -- "cpp",
+          -- "cmake",
           -- "make",
           -- "ocaml",
           -- "clojure",
@@ -54,7 +54,7 @@ return {
           -- "rust",
           -- "sql",
           -- "gitignore",
-        },
+        -- },
         -- enable nvim-ts-context-commentstring plugin for commenting tsx and jsx
         context_commentstring = {
           enable = true,
