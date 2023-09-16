@@ -2,7 +2,6 @@ return {
   "williamboman/mason.nvim",
   dependencies = {
     "williamboman/mason-lspconfig.nvim",
-    "jayp0521/mason-null-ls.nvim",
   },
   config = function()
     -- import mason
@@ -10,9 +9,6 @@ return {
 
     -- import mason-lspconfig
     local mason_lspconfig = require("mason-lspconfig")
-
-    -- import mason-null-ls
-    local mason_null_ls = require("mason-null-ls")
 
     -- enable mason and configure icons
     mason.setup({
