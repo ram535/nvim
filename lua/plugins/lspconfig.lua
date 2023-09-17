@@ -14,8 +14,7 @@ return {
 
     -- format file when saving
     vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-      buffer =  "*.lua\\,*.cpp",
-      group = "formatting",
+      pattern = {"*.lua", "*.cpp"},
       callback = function()
         vim.lsp.buf.format()
       end,

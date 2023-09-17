@@ -2,6 +2,7 @@ return {
   "williamboman/mason.nvim",
   dependencies = {
     "williamboman/mason-lspconfig.nvim",
+    "jay-babu/mason-nvim-dap.nvim",
   },
   config = function()
     -- import mason
@@ -38,6 +39,6 @@ return {
       -- auto-install configured servers (with lspconfig)
       -- automatic_installation = true, -- not the same as ensure_installed
     -- })
-
+    require("mason-nvim-dap").setup()
   end,
 }
