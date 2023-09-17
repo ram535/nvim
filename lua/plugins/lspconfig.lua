@@ -12,6 +12,15 @@ return {
     -- import cmp-nvim-lsp plugin
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
+    -- format file when saving
+    vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+      buffer = "*.lua,*.cpp",
+      group = "formatting",
+      callback = function()
+        vim.lsp.buf.format()
+      end,
+    })
+
     local keymap = vim.keymap -- for conciseness
 
     local opts = { noremap = true, silent = true }
