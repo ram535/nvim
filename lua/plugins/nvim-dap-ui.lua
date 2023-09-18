@@ -1,3 +1,4 @@
 return {
-  "rcarriga/nvim-dap-ui",
+   "rcarriga/nvim-dap-ui",
+   event = "VeryLazy",
 }
