@@ -1,6 +1,6 @@
 return {
    "Olical/conjure",
-   ft = { "clojure", "fennel", "python" },  -- etc
+   ft = { "clojure", "fennel", "python" }, -- etc
    -- [Optional] cmp-conjure for cmp
    dependencies = {
       {
@@ -20,7 +20,7 @@ return {
          end,
       },
    },
-   config = function(_, opts)
+   config = function(_, _)
       require("conjure.main").main()
       require("conjure.mapping")["on-filetype"]()
    end,
